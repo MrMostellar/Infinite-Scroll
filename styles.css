@@ -5,4 +5,37 @@ html{
 body{
     margin: 0;
     min-height: 100vh;
+    font-family: 'Gloock', serif;
+    background-color: whitesmoke;
+}
+
+h1{
+    margin-top: 25px;
+    margin-bottom: 15 px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.loader{
+    position: fixed;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, .8);
+    justify-content: center;
+    align-items: center;
+
+}
+/* work-around to hide a flex container with .hidden */
+[hidden]{
+    display: none;
+}
+
+.content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
