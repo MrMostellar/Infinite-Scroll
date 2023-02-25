@@ -5,7 +5,7 @@ html{
 body{
     margin: 0;
     min-height: 100vh;
-    font-family: 'Gloock', serif;
+    font-family: 'Josefin Sans', sans-serif;
     background-color: whitesmoke;
 }
 
@@ -19,23 +19,45 @@ h1{
 
 .loader{
     position: fixed;
-    display: flex;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, .8);
-    justify-content: center;
-    align-items: center;
-
 }
-/* work-around to hide a flex container with .hidden */
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left:  50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-container{
+    margin: 10px 25%;
+}
+
+.content-container img{
+    width: 100%
+}
+
+/* flex box workaround */
 [hidden]{
     display: none;
 }
 
-.content-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* media query for smartphones */
+@media screen and (max-width: 600px){
+    
+    .content-container{
+        margin: 10px;
+    }
+}
+
+/* media query for tablets */
+@media screen and (max-width: 1000px) and (min-width: 600px){
+    
+    .content-container{
+        margin: 10px 10%;
+    }
 }
